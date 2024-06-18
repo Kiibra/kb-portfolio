@@ -45,7 +45,7 @@ html {
 
 body {
   font-family: 'PT Sans', sans-serif;
-  /* background-color: #adaf98; */
+  background-color: #adaf98;
 }
 
 ul {
@@ -96,7 +96,7 @@ a:hover::after {
   padding: 1.8rem 4rem;
   font-size: 1.8rem;
   border-radius: 5px;
-  border: 2px solid rgba(var(--themeColor), 1);
+  border: 2px solid #956437;
 }
 
 @media (max-width: 37.5em) {
@@ -106,13 +106,13 @@ a:hover::after {
 }
 
 .btn-theme {
-  background: rgba(var(--themeColor), 1);
+  background: #956437;
   color: #fff;
   box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
 }
 
 .btn-inv {
-  color: rgba(var(--themeColor), 1);
+  color: #956437;
   background: #fff;
 }
 
@@ -151,7 +151,7 @@ a:hover::after {
   font-size: 4.5rem;
   letter-spacing: 1px;
   line-height: 1.3;
-  color: #000;
+  color: #d2cdcd;
   font-weight: 400;
 }
 
@@ -171,7 +171,7 @@ a:hover::after {
   font-size: 4rem;
   letter-spacing: 1px;
   line-height: 1.3;
-  color: #000;
+  color: #894f03;
   font-weight: 400;
 }
 
@@ -185,9 +185,9 @@ a:hover::after {
   font-size: 3.4rem;
   letter-spacing: 1px;
   line-height: 1.3;
-  color: #492c2c;
+  color: #cbcbcb;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(14, 14, 14, 0.629);
+  text-shadow: 2px 2px 4px rgba(132, 129, 129, 0.629);
   filter: brightness(1.1);
 }
 
@@ -211,7 +211,7 @@ a:hover::after {
 
 .text-primary {
   font-size: 1.9rem;
-  color: #444;
+  color: hsl(0, 0%, 0%);
   line-height: 1.6;
 }
 
@@ -226,7 +226,7 @@ a:hover::after {
 
 /* Animation ( Keyframes ) */
 
-@keyframes downToUp {
+/* @keyframes downToUp {
   0% {
     opacity: 0;
     transform: translateY(50px);
@@ -236,7 +236,7 @@ a:hover::after {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 /* Main Header Stylings */
 
