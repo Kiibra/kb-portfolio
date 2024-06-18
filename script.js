@@ -8,8 +8,10 @@ const smMenuLink2 = document.querySelector('.main-header__sm-menu-link--2')
 const smMenuLink3 = document.querySelector('.main-header__sm-menu-link--3')
 const smMenuLink4 = document.querySelector('.main-header__sm-menu-link--4')
 const buttonDownload = document.querySelector('.btn.btn-theme.btn-sm')
+const openResumeBtn = document.getElementById('openResumeBtn')
 
 buttonDownload.addEventListener('click', downloadCV)
+openResumeBtn.addEventListener('click', openResume)
 
 function downloadCV(){
   const link = document.createElement('a')
@@ -18,6 +20,10 @@ function downloadCV(){
   document.body.appendChild(link)
   link.click()
   document.body.removeChild(link)
+}
+
+function openResume() {
+  window.open('assets/files/Kibra SWE Resume.pdf', '_blank')
 }
 
 smMenuBtn.addEventListener('click', () => {
