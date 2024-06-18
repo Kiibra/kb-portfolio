@@ -45,7 +45,7 @@ html {
 
 body {
   font-family: 'PT Sans', sans-serif;
-  background-color: #adaf98;
+  background-color: #bdb2ae;
 }
 
 ul {
@@ -157,7 +157,7 @@ a:hover::after {
   font-size: 4.5rem;
   letter-spacing: 1px;
   line-height: 1.3;
-  color: #d2cdcd;
+  color: #671717;
   font-weight: 400;
 }
 
