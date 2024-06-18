@@ -532,7 +532,7 @@ a:hover::after {
   margin-right: 2rem;
   margin-bottom: 2rem;
 
-  background: #77737084;
+  background: #fbf6f384;
   color: #101010;
   border-radius: 5px;
   font-weight: 500;
@@ -600,11 +600,11 @@ a:hover::after {
 
 /* ______ */
 .skills-showcase__list-item {
-  padding: 1rem;
+  /* padding: 1rem; */
   width: 78px;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* border-radius: 5px;
+  background: #f8f4f4;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
 .skills-showcase__list-item i {
