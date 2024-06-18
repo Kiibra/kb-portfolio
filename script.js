@@ -7,6 +7,18 @@ const smMenuLink1 = document.querySelector('.main-header__sm-menu-link--1')
 const smMenuLink2 = document.querySelector('.main-header__sm-menu-link--2')
 const smMenuLink3 = document.querySelector('.main-header__sm-menu-link--3')
 const smMenuLink4 = document.querySelector('.main-header__sm-menu-link--4')
+const buttonDownload = document.querySelector('.btn.btn-theme.btn-sm')
+
+buttonDownload.addEventListener('click', downloadCV)
+
+function downloadCV(){
+  const link = document.createElement('a')
+  link.href = 'assets/files/Kibra SWE Resume.pdf'
+  link.download = 'Kibra-SWE-Resume.pdf' 
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
 
 smMenuBtn.addEventListener('click', () => {
   smMenu.style.transitionDelay = '0s'
