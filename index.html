@@ -12,6 +12,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
   <title>Kibra B - WowFolio</title>
   <meta name="description" content="Wowfolio - A Simple & Clean Portfolio Template For Developers" />
+
+  <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+      emailjs.init({
+        publicKey: "GzWCxp3UmsGoc4u2O",
+      })
+  })()
+</script> -->
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init('GzWCxp3UmsGoc4u2O'); // Replace with your EmailJS user ID
+  })();
+</script>
 </head>
 
 <body>
@@ -327,66 +345,25 @@
   <section id="contact" class="contact main-section">
     <div class="main-container">
       <h2 class="heading-secondary">
-        <span class="heading-secondary__sm"> Contact 📞</span>
-        <span class="heading-secondary__main">
-          Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
-        </span>
-      </h2>
-      <div class="main-section__content">
-        <div class="contact__form-cont">
-          <form class="contact__form">
-            <div class="contact__form-field">
-              <label for="name" class="contact__form-field-label">Name</label>
-              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
-            </div>
-            <div class="contact__form-field">
-              <label for="name" class="contact__form-field-label">Email</label>
-              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
-            </div>
-            <div class="contact__form-field">
-              <label for="name" class="contact__form-field-label">Message</label>
-              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
-                class="contact__form-field-input"></textarea>
-            </div>
-            <button type="submit" class="contact__form-submit">Submit</button>
-          </form>
-          <div class="contact__form-visual"></div>
+        <span class="heading-secondary"> GET IN TOUCH </span>
+        <div id="email" class="heading-secondary__sm">
+          kibra99@gmail.com 
         </div>
+      </h2>
+      <div class="main-footer__socials">
+        <a href="https://github.com/Kiibra" class="main-footer__social-link">
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+            alt="" class="main-footer__social-link-icon" />
+        </a>
+        <a href="www.linkedin.com/in/kibra-buluts" class="main-footer__social-link">
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+            alt="" class="main-footer__social-link-icon" />
+        </a>
       </div>
-    </div>
   </section>
   <footer class="main-footer">
-    <div class="main-footer__upper">
-      <div class="main-container">
-        <ul class="main-footer__links">
-          <li class="main-footer__link">
-            <a href="./index.html">Home</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="./index.html#about">About</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="./index.html#projects">Projects</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="./index.html#contact">Contact</a>
-          </li>
-        </ul>
-        <div class="main-footer__mid-line"></div>
-        <div class="main-footer__socials">
-          <a href="https://github.com/Kiibra" class="main-footer__social-link">
-            <img
-              src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
-              alt="" class="main-footer__social-link-icon" />
-          </a>
-          <a href="www.linkedin.com/in/kibra-buluts" class="main-footer__social-link">
-            <img
-              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
-              alt="" class="main-footer__social-link-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
     <div class="main-footer__bottom">
       <div class="main-container">
         <p class="main-footer__bottom-txt">
@@ -399,6 +376,7 @@
     </div>
   </footer>
   <script src="./script.js"></script>
+  </script>
 </body>
 
 </html>

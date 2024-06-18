@@ -8,10 +8,25 @@ const smMenuLink2 = document.querySelector('.main-header__sm-menu-link--2')
 const smMenuLink3 = document.querySelector('.main-header__sm-menu-link--3')
 const smMenuLink4 = document.querySelector('.main-header__sm-menu-link--4')
 const buttonDownload = document.querySelector('.btn.btn-theme.btn-sm')
+const contactForm = document.querySelector('.contact__form')
 const openResumeBtn = document.getElementById('openResumeBtn')
+// const nameInput = document.getElementById('name-input')
+// const emailInput = document.getElementById('email-input')
+// // const subjectInput = document.getElementById('subject-input')
+// const messageInput = document.getElementById('message-input')
 
 buttonDownload.addEventListener('click', downloadCV)
 openResumeBtn.addEventListener('click', openResume)
+// contactForm.addEventListener('submit', handleSubmit)
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contact__form')
+  if (form) {
+    form.addEventListener('submit', sendEmail)
+  } else {
+    console.error('Form element not found')
+  }
+})
+
 
 function downloadCV(){
   const link = document.createElement('a')
@@ -25,6 +40,35 @@ function downloadCV(){
 function openResume() {
   window.open('assets/files/Kibra SWE Resume.pdf', '_blank')
 }
+
+function sendEmail(evt) {
+  evt.preventDefault();
+  
+  let templateParams = {
+    name: document.getElementById('name-input').value,
+    email: document.getElementById('email-input').value,
+    subject: document.getElementById('subject-input').value,
+    message: document.getElementById('message-input').value,
+  };
+  
+  emailjs.send("service_i7lybd1", "template_6v4mdsk", templateParams)
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      alert('Message sent successfully!');
+    }, function(error) {
+      console.log('FAILED...', error);
+      alert('Failed to send message. Please try again.');
+    });
+
+  console.log(templateParams);
+}
+
+
+// function handleSubmit(evt) {
+//   evt.preventDefault()
+
+//   sendEmail()
+// }
 
 smMenuBtn.addEventListener('click', () => {
   smMenu.style.transitionDelay = '0s'
@@ -129,9 +173,9 @@ const eventFire = (el, etype) => {
   }
 }
 
-themeColorSelector.addEventListener('click', () => {
-  eventFire(themeColorSelectorInput, 'input')
-})
+// themeColorSelector.addEventListener('click', () => {
+//   eventFire(themeColorSelectorInput, 'input')
+// })
 
 const setDynamicColor = (color) => {
 
@@ -141,9 +185,9 @@ const setDynamicColor = (color) => {
   //localStorage.setItem('color', color)
 }
 
-themeColorSelectorInput.addEventListener('input', (e) => {
-  setDynamicColor(e.target.value)
-})
+// themeColorSelectorInput.addEventListener('input', (e) => {
+//   setDynamicColor(e.target.value)
+// })
 
 // if (localStorage.getItem('color')) {
 //   let userSelectedColor = localStorage.getItem('color')
