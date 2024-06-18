@@ -18,14 +18,6 @@ const openResumeBtn = document.getElementById('openResumeBtn')
 buttonDownload.addEventListener('click', downloadCV)
 openResumeBtn.addEventListener('click', openResume)
 // contactForm.addEventListener('submit', handleSubmit)
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('contact__form')
-  if (form) {
-    form.addEventListener('submit', sendEmail)
-  } else {
-    console.error('Form element not found')
-  }
-})
 
 
 function downloadCV(){
@@ -41,34 +33,6 @@ function openResume() {
   window.open('assets/files/Kibra SWE Resume.pdf', '_blank')
 }
 
-function sendEmail(evt) {
-  evt.preventDefault();
-  
-  let templateParams = {
-    name: document.getElementById('name-input').value,
-    email: document.getElementById('email-input').value,
-    subject: document.getElementById('subject-input').value,
-    message: document.getElementById('message-input').value,
-  };
-  
-  emailjs.send("service_i7lybd1", "template_6v4mdsk", templateParams)
-    .then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
-      alert('Message sent successfully!');
-    }, function(error) {
-      console.log('FAILED...', error);
-      alert('Failed to send message. Please try again.');
-    });
-
-  console.log(templateParams);
-}
-
-
-// function handleSubmit(evt) {
-//   evt.preventDefault()
-
-//   sendEmail()
-// }
 
 smMenuBtn.addEventListener('click', () => {
   smMenu.style.transitionDelay = '0s'
