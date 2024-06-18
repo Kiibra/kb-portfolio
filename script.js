@@ -33,6 +33,28 @@ function openResume() {
   window.open('assets/files/Kibra SWE Resume.pdf', '_blank')
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  typeWriter('span1', 0, () => {
+    setTimeout(() => typeWriter('span2', 0), 2000); // Delay before starting the second span
+  });
+});
+
+function typeWriter(id, index, callback) {
+  const element = document.getElementById(id);
+  const text = element.textContent;
+  element.textContent = '';
+
+  (function type() {
+    if (index < text.length) {
+      element.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 50); // Adjust typing speed here
+    } else if (callback) {
+      callback();
+    }
+  })();
+}
+
 
 smMenuBtn.addEventListener('click', () => {
   smMenu.style.transitionDelay = '0s'
