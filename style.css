@@ -253,14 +253,32 @@ a:hover::after {
   cursor: pointer;
 }
 
+.main-header__logo {
+  margin-right: 4.5rem;
+  margin-left: 1px;
+  width: 6rem; 
+  height: 5rem;
+  overflow: hidden;
+  /* border-radius: 50%;  */
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.main-header__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
 .main-header__logo-img-cont {
   margin-right: 4.5rem;
-  margin-top: 28rem;
+  margin-top: 27rem;
   margin-left: 1px;
-  /* width: 64rem; */
-  height: 50rem;
+  width: 30rem;
+  height: 40rem;
   overflow: hidden;
-  border-radius: 20rem;
+  border-radius: 8%;
   background: rgba(var(--themeColor), 1);
 }
 
