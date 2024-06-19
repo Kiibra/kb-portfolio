@@ -749,7 +749,7 @@ a:hover::after {
   width: 90%;
   /* height: auto;  */
   height: 90%; 
-  /* border-radius: 18px;  */
+  border-radius: 6px; 
 }
 
 .projects__list-item-heading-tertiary {
