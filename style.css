@@ -773,7 +773,7 @@ a:hover::after {
 .projects__list-item-text-primary {
   font-size: 15px;
   margin-bottom: 4rem;
-  width: 500px;
+  width: 470px;
   color: #4f4d4d; /* Text color */
   display: none; /* Initially hidden */
 }
