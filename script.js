@@ -34,8 +34,8 @@ function openResume() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  typeWriter('span1', 0, () => {
-    setTimeout(() => typeWriter('span2', 0), 2000); // Delay before starting the second span
+  typeWriter('intro-sm', 0, () => {
+      document.getElementById('intro-main').style.opacity = '1';
   });
 });
 
@@ -45,16 +45,15 @@ function typeWriter(id, index, callback) {
   element.textContent = '';
 
   (function type() {
-    if (index < text.length) {
-      element.textContent += text.charAt(index);
-      index++;
-      setTimeout(type, 50); // Adjust typing speed here
-    } else if (callback) {
-      callback();
-    }
+      if (index < text.length) {
+          element.textContent += text.charAt(index);
+          index++;
+          setTimeout(type, 50); // Adjust typing speed here
+      } else if (callback) {
+          callback();
+      }
   })();
 }
-
 
 smMenuBtn.addEventListener('click', () => {
   smMenu.style.transitionDelay = '0s'
