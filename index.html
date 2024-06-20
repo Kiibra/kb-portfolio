@@ -10,26 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
-  <title>Kibra B - WowFolio</title>
+  <title>Kibra Buluts</title>
   <meta name="description" content="Wowfolio - A Simple & Clean Portfolio Template For Developers" />
-
-  <!-- <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-  (function(){
-      emailjs.init({
-        publicKey: "GzWCxp3UmsGoc4u2O",
-      })
-  })()
-</script> -->
-
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function() {
-    emailjs.init('GzWCxp3UmsGoc4u2O'); // Replace with your EmailJS user ID
-  })();
-</script>
+  <link id="favi" width="40"  height="'40" rel="icon" href="/assets/initial-logo.png">
 </head>
 
 <body>
@@ -40,7 +23,6 @@
           src="/assets/initial-logo.png"
           alt="logo Image" class="main-header__logo-img" />
         </div>
-      <!-- <h4 class="main-header__logo-text">Kibra Buluts</h4> -->
     </div>
     <nav class="main-header__navigation">
       <ul class="main-header__navigation-links">
@@ -79,27 +61,23 @@
     <button class="btn btn-theme btn-sm" >Download CV</button>
   </header>
 
-  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
-  <!-- <div class="themeClrSelector">
-    <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
-    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
-      class="themeClrSelector__img" />
-  </div> -->
-  <!---->
-
   <section id="home-hero" class="home-hero">
     <div class="home-hero__content">
       <div class="home-hero__info">
         <h1 class="heading-primary home-hero__heading-primary">
-          <span class="heading-primary__sm"> Hello 👋</span>
-          <span class="heading-primary__main">
-            I'm Kibra Buluts! <br>
-            Full Stack Software Engineer
+          <span class="heading-primary greeting"> Hello!</span>
+        </h1>
+
+        <h1 class="heading-secondary__main intro-sen">
+          I'm <span class="heading-primary heading-name">
+            Kibra Buluts! <br>
           </span>
         </h1>
-        <button class="btn btn-theme home-hero__btn-theme"  id="openResumeBtn">Resume</button>
-        <button class="btn btn-inv home-hero__btn-theme"onclick="location.href='mailto:kibra99@gmail.com?subject=Hello%20Kibra&body=I%20wanted%20to%20reach%20out%20to%20you%20regarding...'" >Contact</button>
+        <span class="role">Full Stack Software Engineer</span>
+        
       </div>
+      <button class="btn btn-theme home-hero__btn-theme"  id="openResumeBtn">Resume</button>
+      <button class="btn btn-inv home-hero__btn-theme"onclick="location.href='mailto:kibra99@gmail.com?subject=Hello%20Kibra&body=I%20wanted%20to%20reach%20out%20to%20you%20regarding...'" >Contact</button>
     </div>
     <div class="main-header__logo-img-cont">
       <img
@@ -127,7 +105,6 @@
                 On my free time I enjoy exploring new restaurants, learning languages, reading 📖, and playing tennis 🎾🏸.
               </span>
             </p>
-            <!-- <button class="btn btn-theme about__btn-theme">Projects</button> -->
           </div>
           <div class="about__skill-info">
             <h3 class="heading-quaternary about__heading-quaternary">
@@ -143,7 +120,6 @@
               <li class="about__skill"><img src="/assets/skills/express.svg" alt="express"></li>
               <li class="about__skill"><img src="/assets/skills/docker.svg" alt="docker"></li>
               <li class="about__skill"><img src="/assets/skills/mongoose.svg" alt="mongoose"></li>
-              <!-- <li class="about__skill"><img src="/assets/skills/express2.svg" alt="express"></li> -->
               <li class="about__skill"><img src="/assets/skills/django.svg" alt="django"></li>
               <li class="about__skill"><img src="/assets/skills/npm.svg" alt="npm"></li>
               <li class="about__skill"><img src="/assets/skills/python.svg" alt="python"></li>
@@ -164,6 +140,7 @@
       </div>
     </div>
   </section>
+
   <section class="skills-showcase">
     <ul class="skills-showcase__list">
       <li class="skills-showcase__list-item" data-skill="HTML">

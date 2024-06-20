@@ -154,11 +154,11 @@ a:hover::after {
 }
 
 .heading-primary {
-  font-size: 4.5rem;
+  font-size: 5rem;
   letter-spacing: 1px;
   line-height: 1.3;
   color: #671717;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @media (max-width: 37.5em) {
@@ -268,18 +268,17 @@ a:hover::after {
 .main-header__logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the container */
+  /* object-fit: cover; Ensures the image covers the container */
 }
 
 .main-header__logo-img-cont {
-  margin-right: 4.5rem;
-  margin-top: 27rem;
-  margin-left: 1px;
-  width: 30rem;
-  height: 40rem;
+  margin-right: 10%;
+  margin-top: 12%;
+  width: 40rem;
+  height: 60rem;
   overflow: hidden;
   border-radius: 8%;
-  background: rgba(var(--themeColor), 1);
+  /* background: rgba(var(--themeColor), 1); */
 }
 
 .main-header__sm-scr-nav-btn {
@@ -446,7 +445,7 @@ a:hover::after {
 }
 
 .home-hero__heading-primary {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .home-hero__btn-theme {
@@ -468,7 +467,7 @@ a:hover::after {
   }
 }
 
-.heading-primary {
+.home-hero__info {
   opacity: 0;
   transform: translateX(20px);
   animation: fadeInUp 1.5s forwards;
@@ -810,6 +809,32 @@ a:hover::after {
 
 .project-contributors {
   font-size: 16px;
+}
+
+.greeting {
+  margin: 0 auto;
+}
+
+.intro-sen{
+  font-size: 40px;
+  font-weight: 100;
+  color: #6f2f2f;
+}
+
+.role {
+  color: #6f2f2f;
+  font-size: 34px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 34px;
+}
+
+.heading-name {
+  font-size: 58px;
+  letter-spacing: 0.3rem;
+  color: #0e71c8;
+  margin-top: 2px;
+  font-weight: 700;
 }
 
 /* Contact */
