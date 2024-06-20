@@ -771,7 +771,7 @@ a:hover::after {
 }
 
 .projects__list-item-text-primary {
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 4rem;
   width: 470px;
   color: #4f4d4d; /* Text color */
@@ -806,6 +806,10 @@ a:hover::after {
   .projects__btn-inv {
     width: 70%;
   }
+}
+
+.project-contributors {
+  font-size: 16px;
 }
 
 /* Contact */
