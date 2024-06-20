@@ -22,7 +22,7 @@ openResumeBtn.addEventListener('click', openResume)
 
 function downloadCV(){
   const link = document.createElement('a')
-  link.href = 'assets/files/Kibra_SWE_Resume'
+  link.href = 'assets/files/Kibra_SWE_Resume.pdf'
   link.download = 'Kibra_SWE_Resume.pdf' 
   document.body.appendChild(link)
   link.click()
