@@ -658,16 +658,14 @@ a:hover::after {
 
 .projects__list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center; /* Adjust this based on your layout preference */
   margin-top: 2rem;
-  /* padding: 20px; */
+  flex-wrap: wrap;
 }
 
 .projects__list-item {
-  flex: 1 1 300px; /* This makes each item take up approximately 45% of the container */
   margin-bottom: 4rem;
+  text-align: center;
 }
 
 .projects__list-item--inv {
@@ -676,8 +674,9 @@ a:hover::after {
 
 @media (max-width: 56.25em) {
   .projects__list-item {
-    flex: 1 1 100%; /* Each item takes the full width on smaller screens */
+    flex: 1 1 20%; /* Each item takes the full width on smaller screens */
     margin-left: 20px;
+    /* justify-content: center; */
   }
 }
 
@@ -721,12 +720,7 @@ a:hover::after {
 }
 
 .projects__list-item-details {
-  /* width: 600px;
-  height: 800px; */
-  /* display: flex; */
-  justify-content: space-between;
-  padding: 12px;
-  /* flex-wrap: wrap; */
+  padding: 16px;
 }
 
 .projects__list-item-details p {
@@ -773,7 +767,7 @@ a:hover::after {
   font-size: 14px;
   margin-bottom: 4rem;
   width: 470px;
-  color: #4f4d4d; /* Text color */
+  color: #4f4d4d;
   display: none; /* Initially hidden */
 }
 
