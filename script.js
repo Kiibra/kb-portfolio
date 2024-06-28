@@ -33,27 +33,6 @@ function openResume() {
   window.open('assets/files/Kibra_SWE_Resume.pdf', '_blank')
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  typeWriter('intro-sm', 0, () => {
-      document.getElementById('intro-main').style.opacity = '1';
-  });
-});
-
-function typeWriter(id, index, callback) {
-  const element = document.getElementById(id);
-  const text = element.textContent;
-  element.textContent = '';
-
-  (function type() {
-      if (index < text.length) {
-          element.textContent += text.charAt(index);
-          index++;
-          setTimeout(type, 50); // Adjust typing speed here
-      } else if (callback) {
-          callback();
-      }
-  })();
-}
 
 smMenuBtn.addEventListener('click', () => {
   smMenu.style.transitionDelay = '0s'
