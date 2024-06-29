@@ -753,6 +753,7 @@ a:hover::after {
   .projects__list-item-heading-tertiary {
     margin: 5rem 0 2.5rem 0;
   }
+
   .projects__list-item-img-cont 
   {
   width: 44rem;
@@ -788,6 +789,7 @@ a:hover::after {
 @media (max-width: 37.5em) {
   .projects__list-item-text-primary {
     margin-bottom: 3.7rem;
+    width: 390px;
   }
 }
 
@@ -802,7 +804,8 @@ a:hover::after {
 
   .projects__btn-theme,
   .projects__btn-inv {
-    width: 70%;
+    width: 35%;
+    margin: 6px;
   }
 }
 
