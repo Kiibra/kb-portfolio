@@ -210,6 +210,9 @@ a:hover::after {
   .heading-tertiary {
     font-size: 3rem;
   }
+  .proj {
+    padding: 5rem;
+  }
 }
 
 .text-primary {
@@ -672,7 +675,7 @@ a:hover::after {
 @media (max-width: 56.25em) {
   .projects__list-item {
     flex: 1 1 20%; /* Each item takes the full width on smaller screens */
-    margin-left: 20px;
+    padding: 20px;
     /* justify-content: center; */
   }
 }
@@ -749,6 +752,11 @@ a:hover::after {
 @media (max-width: 37.5em) {
   .projects__list-item-heading-tertiary {
     margin: 5rem 0 2.5rem 0;
+  }
+  .projects__list-item-img-cont 
+  {
+  width: 44rem;
+  height: 300px; 
   }
 }
 
