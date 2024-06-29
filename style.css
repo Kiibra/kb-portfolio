@@ -14,6 +14,9 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 /* 75em === 1200px */
 @media (max-width: 75em) {
@@ -35,13 +38,6 @@ html {
     font-size: 56%;
   }
 }
-
-/* 112.5em === 1600px */
-/* @media (min-width: 112.5em) {
-  html {
-    font-size: 65%;
-  }
-} */
 
 body {
   font-family: 'PT Sans', sans-serif;
@@ -238,7 +234,7 @@ a:hover::after {
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem;
-  position: fixed;
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
@@ -268,7 +264,7 @@ a:hover::after {
 .main-header__logo img {
   width: 100%;
   height: 100%;
-  /* object-fit: cover; Ensures the image covers the container */
+  object-fit: cover; /* Ensures the image covers the container */
 }
 
 .main-header__logo-img-cont {
@@ -576,6 +572,7 @@ a:hover::after {
 }
 
 .skills-showcase__item {
+  position: absolute;
   padding: 10px 20px;
   margin-right: 20px;
   background: #282c34;
@@ -587,10 +584,10 @@ a:hover::after {
 /* Keyframes for scrolling animation */
 @keyframes scroll {
   0% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
