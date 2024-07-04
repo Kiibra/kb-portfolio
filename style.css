@@ -126,17 +126,14 @@ a:hover::after {
   flex-direction: column;
   max-width: 160rem;
   margin: 0 auto;
-  /* width: 90%; */
-  
 }
 
 .main-section {
-  padding: 12rem 0;
+  padding: 8rem 0;
 }
 
 .main-section__content {
   margin-top: 10rem;
-  /* width: /; */
 }
 
 @media (max-width: 37.5em) {
@@ -903,6 +900,7 @@ a:hover::after {
   align-content: center;
   justify-content: space-evenly;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 #email {
