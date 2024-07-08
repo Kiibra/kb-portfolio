@@ -10,27 +10,21 @@ const smMenuLink4 = document.querySelector('.main-header__sm-menu-link--4')
 const buttonDownload = document.querySelector('.btn.btn-theme.btn-sm')
 const contactForm = document.querySelector('.contact__form')
 const openResumeBtn = document.getElementById('openResumeBtn')
-// const nameInput = document.getElementById('name-input')
-// const emailInput = document.getElementById('email-input')
-// // const subjectInput = document.getElementById('subject-input')
-// const messageInput = document.getElementById('message-input')
 
 buttonDownload.addEventListener('click', downloadCV)
 openResumeBtn.addEventListener('click', openResume)
-// contactForm.addEventListener('submit', handleSubmit)
-
 
 function downloadCV(){
   const link = document.createElement('a')
-  link.href = 'assets/files/Kibra_SWE_Resume.pdf'
-  link.download = 'Kibra_SWE_Resume.pdf' 
+  link.href = 'assets/files/KibraB_SWE_Resume.pdf'
+  link.download = 'KibraB_SWE_Resume.pdf' 
   document.body.appendChild(link)
   link.click()
   document.body.removeChild(link)
 }
 
 function openResume() {
-  window.open('assets/files/Kibra_SWE_Resume.pdf', '_blank')
+  window.open('assets/files/KibraB_SWE_Resume.pdf', '_blank')
 }
 
 
