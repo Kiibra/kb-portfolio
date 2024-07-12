@@ -16,15 +16,15 @@ openResumeBtn.addEventListener('click', openResume)
 
 function downloadCV(){
   const link = document.createElement('a')
-  link.href = 'assets/files/KibraB_SWE_Resume.pdf'
-  link.download = 'KibraB_SWE_Resume.pdf' 
+  link.href = 'assets/files/Kibra_Buluts_Resume.pdf'
+  link.download = 'Kibra_Buluts_Resume.pdf' 
   document.body.appendChild(link)
   link.click()
   document.body.removeChild(link)
 }
 
 function openResume() {
-  window.open('assets/files/KibraB_SWE_Resume.pdf', '_blank')
+  window.open('assets/files/Kibra_Buluts_Resume.pdf', '_blank')
 }
 
 
