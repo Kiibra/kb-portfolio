@@ -62,10 +62,9 @@ nav a::after {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #0e71c8; /* Underline color */
+  background-color: #0e71c8;
   visibility: hidden;
   transform: scaleX(0);
-  /* transform-origin: left; Start the transformation from the left */
   transition: all 0.3s ease-in-out;
 }
 
@@ -126,6 +125,7 @@ a:hover::after {
   flex-direction: column;
   max-width: 160rem;
   margin: 0 auto;
+  padding: 26px;
 }
 
 .main-section {
@@ -134,6 +134,7 @@ a:hover::after {
 
 .main-section__content {
   margin-top: 10rem;
+  padding: 20px;
 }
 
 @media (max-width: 37.5em) {
@@ -416,6 +417,7 @@ a:hover::after {
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
+  padding: 26px;
 }
 
 .home-hero__content {
@@ -595,9 +597,6 @@ a:hover::after {
 .skills-showcase__list-item {
   padding: 1rem;
   width: 78px;
-  /* border-radius: 5px;
-  background: #f8f4f4;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
 .skills-showcase__list-item i {
@@ -654,7 +653,7 @@ a:hover::after {
 /* projects */
 
 .projects__list {
-  display: flex;
+  display: flex; 
   justify-content: center; /* Adjust this based on your layout preference */
   margin-top: 2rem;
   flex-wrap: wrap;
@@ -859,7 +858,6 @@ a:hover::after {
 }
 
 /* Main Footer */
-
 .main-footer__upper {
   background: #000;
   padding: 10rem 0;
