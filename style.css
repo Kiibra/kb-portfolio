@@ -128,10 +128,6 @@ a:hover::after {
   padding: 26px;
 }
 
-.main-section {
-  padding: 8rem 0;
-}
-
 .main-section__content {
   margin-top: 10rem;
   padding: 20px;
@@ -214,7 +210,7 @@ a:hover::after {
 }
 
 .text-primary {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   color: hsl(0, 0%, 0%);
   line-height: 1.6;
 }
